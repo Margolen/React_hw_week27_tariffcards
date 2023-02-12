@@ -1,0 +1,95 @@
+$color:rgb(236, 252, 251);
+
+.tariff_card {
+    display: inline-grid;
+    width: 20%;
+    margin:4px;
+    gap: 1px;
+    
+
+    .speed {
+        background-color: rgb(248, 248,248)
+    }
+
+    .text {
+        background-color: rgb(238, 238,238)
+    }
+    
+ }
+ 
+ .tariff  {
+    span {
+        font-size: 48px;
+    }
+
+    sup {
+        vertical-align: top;
+    }
+
+    sub { 
+        vertical-align: bottom;
+    }
+}
+
+
+.card0 
+{
+    .title {
+        background-color: rgb(35, 154, 171);
+        color: $color;
+    }
+
+    .tariff {
+        background-color: rgb(44, 193, 213);
+        color: $color;
+    }
+}
+
+.card1 
+{
+    .title
+    {
+       background-color: rgb(31, 137, 114);
+       color: $color;
+    } 
+
+    .tariff
+    {
+        background-color: rgb(36, 174, 141);
+        color: $color;
+    }
+}
+
+
+ .card2 
+ {
+    box-shadow: 5px 10px 5px gray;
+
+    .title
+    {
+       background-color: rgb(198, 82, 78);
+       color: $color;
+    } 
+    .tariff
+ {
+    background-color: rgb(244, 106, 95);
+    color: $color;
+ }
+ }
+
+
+ .card3
+  {
+    .title
+    {
+       background-color: rgb(40, 47, 55);
+       color: $color;
+    } 
+    .tariff
+  {
+     background-color: rgb(51, 58, 68);
+     color: $color;
+  }
+ }
+ 
+ 
