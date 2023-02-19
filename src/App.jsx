@@ -1,5 +1,6 @@
 import "./App.css";
 import TariffCard from "./components/TariffCard/TariffCard";
+import {useState} from  'react';
 
 const tariffCards =[
   {
@@ -29,6 +30,8 @@ const tariffCards =[
 ]
 
 export default function App() {
+  const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
+  
   return (
     <div className="App">
       <div>
@@ -38,7 +41,9 @@ export default function App() {
           tariff={tariffCard.tariff}
           speed={tariffCard.speed}
           text={tariffCard.text}
+          isSelected={index === selectedCardIndex}
           index={index}
+          onSelected={() => setSelectedCardIndex(index)}
           />
         ))}
       </div>

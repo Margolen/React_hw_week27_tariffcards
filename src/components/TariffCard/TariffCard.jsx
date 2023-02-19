@@ -1,4 +1,4 @@
-import  style from './style.module.scss'
+import style from './style.module.scss'
 
 export default function TariffCard(props) {
     const cardStyles = {
@@ -9,15 +9,13 @@ export default function TariffCard(props) {
     }
 
     const cardStyle = cardStyles[props.index]
-    
+
     return (
-      <div className={[style.tariff_card, cardStyle].join(' ')}>
-  
+      <div onClick={props.onSelected} className={[style.tariff_card, cardStyle, props.isSelected ? style.selected : ""].join(' ')}>
         <div className={style.title}>{props.title}</div>
         <div  className={style.tariff}><sup>руб</sup><span>{props.tariff}</span><sub>/мес</sub></div>
         <div className={style.speed}>{props.speed}</div>
         <div className={style.text}>{props.text}</div>
-  
       </div>
     )
   }

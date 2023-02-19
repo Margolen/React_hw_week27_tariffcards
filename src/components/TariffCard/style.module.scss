@@ -63,8 +63,7 @@ $color:rgb(236, 252, 251);
 
  .card2 
  {
-    box-shadow: 5px 10px 5px gray;
-
+   
     .title
     {
        background-color: rgb(198, 82, 78);
@@ -91,5 +90,10 @@ $color:rgb(236, 252, 251);
      color: $color;
   }
  }
+
+ .selected{
+    box-shadow: 5px 10px 5px gray;
+ }
+
  
  
